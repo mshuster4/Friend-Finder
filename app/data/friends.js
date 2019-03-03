@@ -1,7 +1,7 @@
 var friendsArray = [
     {
         name: "Bob",
-        photo: "888",
+        photo: "https://d17fnq9dkz9hgj.cloudfront.net/uploads/2018/04/Frenchie_05.jpg",
         scores: [
             "3",
             "2",
@@ -10,7 +10,7 @@ var friendsArray = [
     },
     {
         name: "Mary",
-        photo: "888",
+        photo: "https://d17fnq9dkz9hgj.cloudfront.net/uploads/2018/04/Frenchie_05.jpg",
         scores: [
             "5",
             "5",
@@ -19,8 +19,8 @@ var friendsArray = [
 
     },
     {
-        name: "Louie"
-        photo: "888",
+        name: "Louie",
+        photo: "https://d17fnq9dkz9hgj.cloudfront.net/uploads/2018/04/Frenchie_05.jpg",
         scores: [
             "1",
             "1",

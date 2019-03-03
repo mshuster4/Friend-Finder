@@ -4,6 +4,24 @@ var friendsData = require("../data/friends.js");
 
 module.exports = function (app) {
     app.get('/api/survey', function (req, res){
-        rest.json(friendsData);
+        res.json(friendsData);
+    });
+
+    app.post('/api/survey', function(req, res) {
+
+        var newfriend = req.body;
+
+        console.log(newfriend);
+
+        friendsData.push(newfriend);
+
+        for (var i = 0; i < friendsData.length; i++) {
+
+            console.log(friendsData[i].scores);
+        }
+
+        res.json(newfriend); 
+        
+
     })
 }
