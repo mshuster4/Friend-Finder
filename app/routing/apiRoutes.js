@@ -35,7 +35,7 @@ module.exports = function (app) {
 
             for (var j = 0; j < compFriend.scores.length; j++) {
 
-                scoreDifference = Math.abs(parseInt(compFriend.scores[j]) - newfriendScores[j]);
+                scoreDifference = Math.abs(compFriend.scores[j] - newfriendScores[j]);
                 differenceArr.push(scoreDifference);
     
             }
