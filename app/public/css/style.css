@@ -1,0 +1,16 @@
+html{
+    height: 100%
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-image: url("images/option-2.jpg");
+    background-size: 215vh;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    overflow: auto;
+  }
+  
+
+  
