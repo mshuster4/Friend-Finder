@@ -2,7 +2,7 @@ html{
     height: 100%
 }
 
-body {
+.home-background {
     width: 100%;
     height: auto;
     background-image: url("images/option-2.jpg");
@@ -12,9 +12,111 @@ body {
     overflow: auto;
   }
 
-  .jumbotron {
-      margin-top: 30px;
+  .home-header {
+    color: #fceab9;
+    font-family: 'Sonsie One', cursive;
   }
-  
+
+.jumbotron {
+    margin-top: 30px;
+    padding-top: 20px; 
+    padding-bottom: 15px;
+    background-color: black;
+    color: #fceab9;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fceab9;
+    border-radius: 7px;
+}
+
+.description {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px; 
+}
+
+hr {
+    background-color: #fceab9;
+}
+
+#surveyButton{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    background-color: #fceab9;
+    color: black;
+    border-style: solid;
+    border-color: black;
+}
+
+.survey-header {
+    font-family: 'Sonsie One', cursive;
+    padding-top: 10px;
+}
+
+.survey-background {
+    background-image: url("images/option-2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    background-size: cover;
+    height: auto;
+    background-position-x: 52%;
+}
+
+
+.survey-container {
+    background-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fceab9;
+    color: #fceab9;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Lato', sans-serif;
+    overflow: auto;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.input {
+    background-color: grey;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fceab9;
+    color: black;
+    
+}
+
+.input:focus {
+    background-color: grey;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fceab9;
+    color: black;
+    font-weight: bold; 
+}
+
+#submit-survey{
+    font-family: 'Lato', sans-serif;
+    background-color: #fceab9;
+    color: black;
+    border-style: solid;
+    border-color: black;
+}
+
+.answerSelect {
+    background-color: grey;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fceab9;
+    color: black;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
 
   
