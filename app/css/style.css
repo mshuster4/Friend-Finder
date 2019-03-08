@@ -120,4 +120,51 @@ hr {
     width: 100%;
 }
 
+.modal-header {
+    color: #fceab9;
+    font-family: 'Sonsie One', cursive;
+    border-bottom: none; 
+}
+
+.modal-content {
+    background-color: black;
+    color: #fceab9;
+    align-items: center;
+    border-style: solid;
+    border-color: #fceab9;
+    border-width: 1px;
+}
+
+.modal-body {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    border-top-color: #fceab9;
+    border-top-style: solid;
+    border-top-width: 1px; 
+}
+
+#best-friend-name {
+    padding-bottom: 10px; 
+}
+
+.modal-footer {
+    border-top: none; 
+}
+
+#best-friend-photo {
+    border-radius: 4px; 
+    width: 100%;
+    height: auto; 
+}
+
+
+.close-button {
+    font-family: 'Lato', sans-serif;
+    background-color: #fceab9;
+    color: black;
+    border-style: solid;
+    border-color: black;
+    margin-top: -15px;
+}
+
   

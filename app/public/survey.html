@@ -49,7 +49,7 @@
         <br>
 
         <h4>Question 1</h4>
-        <p>Music and the arts should be valued in education.</p>
+        <p>Music and the arts should more valued in education.</p>
             
         <form>
             <select class="answerSelect" id="q1">
@@ -209,34 +209,31 @@
 
         <br>
 
-        <button type="button" class="btn btn-secondary" id="submit-survey">Submit</button>
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#best-friend-modal" id="submit-survey">Submit</button>
 
-        <div id="best-friend-modal" class="modal fade" role="dialog">
+        <div id="best-friend-modal" class="modal fade">
+            <div class="modal-dialog">
                 <div class="modal-content">
 
                     <div class="modal-header">
-                      <h5 class="modal-title">Best Match</h5>
-                      <button type="button" class="close close-button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                      </button>
+                        <h4 class="modal-title">Best Match</h4>
                     </div>
 
                     <div class="modal-body">
-                      <h2 id="best-friend-name"></h2>
-                      <img id="best-friend-photo" src="#">
+                        <h2 id="best-friend-name"></h2>
+                        <img id="best-friend-photo" src="#">
                     </div>
 
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-default close-button" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-default close-button" data-dismiss="modal">Close</button>
                     </div>
 
                 </div>
             </div>
+
         </div>
-       
 
     </div>
-
 
 </body>
 
@@ -276,7 +273,7 @@
             
             $("#best-friend-name").text(data.name);
             $("#best-friend-photo").attr("src", data.photo);
-            $("#best-friend-modal").modal("show");
+            $("#best-friend-modal").modal();
 
         });
 
@@ -285,7 +282,7 @@
 
     $(".close-button").on("click", function(event){
 
-        $("#best-friend-modal").hide();
+        $("#best-friend-modal").modal("hide");
 
     });
 
