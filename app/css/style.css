@@ -47,6 +47,28 @@ hr {
     color: black;
     border-style: solid;
     border-color: black;
+    border-width: 1px;
+}
+
+#surveyButton:hover, #submit-survey:hover, .close-button:hover {
+    background-color: #898784;
+    color: #fceab9;
+    border-style: solid;
+    border-color: #fceab9;
+    border-width: 1px;
+}
+
+.nav-link {
+    color: #fceab9; 
+    margin-bottom: 5px; 
+}
+
+.nav-link:hover {
+    color: #898784;
+}
+
+.nav-link:focus {
+    color: #898784;
 }
 
 .survey-header {
@@ -111,6 +133,11 @@ hr {
     border-width: 1px;
     border-color: #fceab9;
     color: black;
+    outline: none; 
+}
+
+.answerSelect:focus {
+    outline: none; 
 }
 
 .footer {
@@ -166,5 +193,61 @@ hr {
     border-color: black;
     margin-top: -15px;
 }
+
+@media only screen and (min-width: 768px) {
+
+    .jumbotron {
+        font-size: 18px;
+    }
+
+    .home-background {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .survey-background {
+        background-position-x: 29%;
+    }
+
+  }
+
+  @media only screen and (max-width: 660px) {
+    
+    .jumbotron {
+        padding: 10px 0px 0px 0px; 
+    }
+
+    #surveyButton {
+        margin-top: 0; 
+        margin-bottom: 5px; 
+    }
+
+    .description {
+        font-size: 17px;
+    }
+
+    .home-background {
+        width: 100%;
+        background-attachment: fixed;
+        background-position-x: 21%; 
+    }
+
+    .survey-background {
+        background-position-x: 16%;
+    }
+
+    .survey-header {
+        font-family: 'Sonsie One', cursive;
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .survey-container {
+        max-width: 90%;
+    }
+  }
+
 
   
