@@ -240,6 +240,27 @@
 
 <script type="text/javascript">
 
+    function validCheck() {
+
+        var isValid = true;
+
+        $(".input").each(function(){
+            if ($(this).val() === "") {
+                isValid = false;
+            }
+        });
+
+        $(".answerSelect").each(function(){
+            if ($(this).val() === "") {
+                isValid = false;
+            }
+
+        });
+
+        return isValid; 
+
+    }
+
     
     function getScoresArr() {
 
@@ -260,30 +281,38 @@
 
         event.preventDefault();
 
-        var newFriend = {
-            name: $("#name").val().trim(),
-            photo: $("#photo").val().trim(),
-            scores: getScoresArr(),
-        };
+        if (validCheck() === true) {
 
-        console.log(newFriend); 
+            var newFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                scores: getScoresArr(),
+            };
 
-        var currentURL = window.location.origin;
+            console.log(newFriend); 
 
-        $.post(currentURL + "/api/survey", newFriend, function(data) {
-            
-            $("#best-friend-name").text(data.name);
-            $("#best-friend-photo").attr("src", data.photo);
-            $("#best-friend-modal").modal();
+            var currentURL = window.location.origin;
 
-            $("#name").val("");
-            $("#photo").val("");
-            $(".answerSelect").val("")
+            $.post(currentURL + "/api/survey", newFriend, function(data) {
+                
+                $("#best-friend-name").text(data.name);
+                $("#best-friend-photo").attr("src", data.photo);
+                $("#best-friend-modal").modal();
+
+                $("#name").val("");
+                $("#photo").val("");
+                $(".answerSelect").val("")
 
 
 
-        });
+            });
+        }
 
+        else {
+            alert("Please make sure all fields are filled out before submitting.");
+        }
+
+        return false;
 
     });
 
